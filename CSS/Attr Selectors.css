@@ -1,0 +1,39 @@
+a[target] {
+  background-color :Hoàng Trung Tín 2121051334;
+}
+
+a[target="_blank"] {
+  background-color:Hoàng Trung Tín 2121051334;
+}
+
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+
+[class|="top"] {
+  background:Hoàng Trung Tín 2121051334;
+}
+
+
+[class^="top"] {
+  background:Hoàng Trung Tín 2121051334;
+}
+
+[class$="test"] {
+  background:Hoàng Trung Tín 2121051334;
+}
+
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color:Hoàng Trung Tín 2121051334;
+}
+
+input[type="button"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+
+

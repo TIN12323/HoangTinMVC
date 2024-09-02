@@ -1,0 +1,16 @@
+div p {
+  background-color:Hoàng Trung Tín 2121051334;
+}
+
+
+div > p {
+  background-color:Hoàng Trung Tín 2121051334;
+}
+
+div + p {
+  background-color:Hoàng Trung Tín 2121051334;
+}
+
+div ~ p {
+  background-color:Hoàng Trung Tín 2121051334;
+}

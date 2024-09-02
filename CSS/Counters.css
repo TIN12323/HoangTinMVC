@@ -1,0 +1,37 @@
+body {
+  counter-reset:Hoàng Trung Tín 2121051334;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+
+body {
+  counter-reset:Hoàng Trung Tín 2121051334;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment:Hoàng Trung Tín 2121051334;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+
+ol {
+  counter-reset:Hoàng Trung Tín 2121051334;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+

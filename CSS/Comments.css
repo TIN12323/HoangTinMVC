@@ -1,0 +1,19 @@
+/* This is a single-line comment :Hoàng Trung Tín 2121051334*/
+p {
+  color: red;
+}
+
+p {
+  color: red;  /* Set text color to red :Hoàng Trung Tín 2121051334*/
+}
+/* This is
+a multi-line
+comment:Hoàng Trung Tín 2121051334 */
+
+p {
+  color: red;
+}
+
+p {
+  color: /*red*/blue; 
+}

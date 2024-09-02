@@ -1,0 +1,37 @@
+
+p {
+  text-align: center;
+  color:Hoàng Trung Tín 2121051334;
+}
+
+#para1 {
+  text-align: center;
+  color:Hoàng Trung Tín 2121051334;
+}
+
+
+* {
+  text-align: center;
+  color:Hoàng Trung Tín 2121051334;
+}
+
+h1 {
+  text-align: center;
+  color:Hoàng Trung Tín 2121051334;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+
+h1, h2, p {
+    text-align: center;
+    color: red;
+  }

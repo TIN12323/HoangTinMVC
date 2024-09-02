@@ -1,0 +1,30 @@
+p {
+  margin-top:Hoàng Trung Tín 2121051334;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+p {
+  margin:Hoàng Trung Tín 2121051334;
+}
+
+p {
+  margin: 25px 50px 75px;
+}
+
+div {
+  width: 300px;
+  margin: auto;
+  border:Hoàng Trung Tín 2121051334;
+}
+
+
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
