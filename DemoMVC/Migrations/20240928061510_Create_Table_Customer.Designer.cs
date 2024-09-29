@@ -3,6 +3,7 @@ using System;
 using DemoMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,16 +11,18 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240928061510_Create_Table_Customer")]
+    partial class Create_Table_Customer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
             modelBuilder.Entity("DemoMVC.Models.Entities.Customer", b =>
                 {
-                    b.Property<Guid>("CustomerId")
+                    b.Property<string>("CustomerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
@@ -37,7 +40,7 @@ namespace DemoMVC.Migrations
 
                     b.HasKey("CustomerId");
 
-                    b.ToTable("Customer", (string)null);
+                    b.ToTable("Customer");
                 });
 
             modelBuilder.Entity("DemoMVC.Models.Student", b =>
@@ -51,7 +54,7 @@ namespace DemoMVC.Migrations
 
                     b.HasKey("StudentId");
 
-                    b.ToTable("Student", (string)null);
+                    b.ToTable("Student");
                 });
 #pragma warning restore 612, 618
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DemoMVC.Models;
+using DemoMVC.Models.Entities;
 
 namespace DemoMVC.Data
 {
@@ -14,6 +15,7 @@ namespace DemoMVC.Data
         {
         }
 
-        public DbSet<Student> Student { get; set; } 
+        public DbSet<Student> Student { get; set; }
+        public DbSet<Customer> Customer { get; set; }  
     }
 }
