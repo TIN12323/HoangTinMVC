@@ -16,28 +16,6 @@ namespace DemoMVC.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
-            modelBuilder.Entity("DemoMVC.Models.Entities.Customer", b =>
-                {
-                    b.Property<string>("CustomerId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("CustomerId");
-
-                    b.ToTable("Customer");
-                });
-
             modelBuilder.Entity("DemoMVC.Models.Entities.Person", b =>
                 {
                     b.Property<string>("PersonId")
@@ -63,20 +41,6 @@ namespace DemoMVC.Migrations
                     b.HasDiscriminator().HasValue("Person");
 
                     b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("DemoMVC.Models.Student", b =>
-                {
-                    b.Property<string>("StudentId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("StudentId");
-
-                    b.ToTable("Student");
                 });
 
             modelBuilder.Entity("DemoMVC.Models.Entities.Employee", b =>
