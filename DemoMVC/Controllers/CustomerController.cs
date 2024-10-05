@@ -83,5 +83,35 @@ namespace DemoMVC.Controllers
         {
             return _context.Customer.Any(e => e.CustomerId == id);
         }
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var cus = await _context.Customer
+                .FirstOrDefaultAsync(m => m.CustomerId == id);
+            if (cus == null)
+            {
+                return NotFound();
+            }
+
+            return View(cus);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var cus = await _context.Customer.FindAsync(id);
+            if (cus != null)
+            {
+                _context.Customer.Remove(cus);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
