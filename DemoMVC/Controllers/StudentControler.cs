@@ -24,6 +24,13 @@ namespace DemoMVC.Controllers
         {
             return View(await _context.Student.ToListAsync());
         }
+        [HttpPost] 
+        public async Task<IActionResult> Index(string KeySearch)
+        {
+            var model = await _context.Person.Where(x => x.PersonId.Contains(KeySearch)).ToListAsync();
+            return View(model); 
+        }
+
 
         // GET: Student/Details/5
         public async Task<IActionResult> Details(string id)
