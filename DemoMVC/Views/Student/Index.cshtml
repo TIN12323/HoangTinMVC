@@ -6,9 +6,16 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="w3-row">
+    <div>
+        <a asp-action="Create" class="w3-border w3-border-blue w3-btn w3-right">NEW VERSION</a>
+    </div>
+    <div class="w3-col l2">
+        <form  asp-action="Index">
+            <input type="text" name="KeySearch" class="w3-input w3-border w3-border-red"/>
+            <input type="submit" value="SEARCH " class="w3-btn w3-border w3-round"/>
+        </form>
+    </div>
 <table class="table">
     <thead>
         <tr>
